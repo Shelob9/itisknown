@@ -1,0 +1,86 @@
+{
+	"name"			: "shelob9/isk",
+	"type"			: "project",
+	"license"		: "GPL v2+",
+	"description"	: "It is Known build stack",
+	"homepage"		: "http://joshpress.net",
+	"authors": [
+		{
+		"name"		: "Josh Pollock",
+		"email"		: "Josh@JoshPress.net",
+		"homepage"	: "https://joshpress.net"
+		}
+	],
+	"type"        : "project",
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "http://wpackagist.org"
+		},
+		{
+		"type": "package",
+		"package": {
+				"name": "wordpress/wordpress",
+				"version": "3.9.1",
+				"type": "webroot",
+				"dist": {
+				"type": "zip",
+				"url": "https://wordpress.org/wordpress-3.9.1.zip"
+			},
+			"require" : {
+				"fancyguy/webroot-installer": "1.1.0"
+			}
+		}
+		},
+		{
+			"type"	: "git",
+			"url"	: "https://github.com/shelob9/app_starter"
+		},
+		{
+            "type"	: "git",
+            "url"	: "https://github.com/Shelob9/isk-app-starter"
+        },
+        {
+            "type"  : "git",
+            "url"   : "https://github.com/pods-framework/pods-frontier"
+        }
+
+	],
+	"config"      : {
+		"vendor-dir":  "vendor"
+	},
+	"require"     : {
+		"php"													: ">=5.3.2",
+		"wordpress/wordpress"									: "3.9.1",
+		"fancyguy/webroot-installer"							: "1.1.0",
+		"composer/installers"									: "v1.0.12",
+		"vlucas/phpdotenv"										: "~1.0.6",
+		"shelob9/app-starter-isk"								: "*",
+		"shelob9/app_starter"									: "*",
+        "wordpress/wordpress"                                   : "3.9.1",
+		"wpackagist-plugin/pods"                                : "*",
+        "wpackagist-plugin/pods-alternative-cache"              : "*",
+        "pods-framework/pods-frontier"                          : "*",
+        "wpackagist-plugin/pods-frontier-auto-template"         : "*",
+        "wpackagist-plugin/gist-github-shortcode"               : "*",
+		"wpackagist/akismet"									: "*",
+		"wpackagist/jetpack"									: "*",
+        "wpackagist/genericond"                                 : "*"
+	},
+	"require-dev" : {
+		"wpackagist-plugin/log-deprecated-notices"              : "*",
+        "wpackagist-plugin/debug-bar"                           : "*",
+        "wpackagist-plugin/debug-bar-console"                   : "*",
+        "wpackagist-plugin/simply-show-ids"                     : "*"
+	},
+  "extra": {
+    "installer-paths": {
+      "web/app/plugins/{$name}/"		: ["type:wordpress-plugin"],
+      "web/app/mu-plugins/{$name}/"		: ["type:wordpress-muplugin"],
+      "web/app/themes/{$name}/"			: ["type:wordpress-theme"]
+    },
+    "webroot-dir"		: 		"web/wp",
+    "webroot-package"	: 	"wordpress/wordpress"
+  }
+}
