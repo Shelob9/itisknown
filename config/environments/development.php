@@ -1,4 +1,4 @@
-<?php
+ <?php
 /* Development */
 define('DB_NAME', getenv('DB_NAME'));
 define('DB_USER', getenv('DB_USER'));
@@ -11,6 +11,3 @@ define('WP_SITEURL', getenv('WP_SITEURL'));
 define('SAVEQUERIES', true);
 define('WP_DEBUG', true);
 define('SCRIPT_DEBUG', true);
-
-
-define( 'JP_DEBUG', true );

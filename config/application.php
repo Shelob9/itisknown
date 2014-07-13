@@ -35,7 +35,7 @@ define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
  */
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
-$table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'isk_';
+$table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'wp_';
 
 /**
  * WordPress Localized Language
@@ -60,11 +60,9 @@ define('NONCE_SALT',       getenv('NONCE_SALT'));
 /**
  * Custom Settings
  */
-define('DISABLE_WP_CRON', true );
-define( 'PODS_AJAX_VIEWS_OVERRIDE', true );
-define( 'PODS_ALT_CACHE_TYPE', 'file' );
-error_reporting( E_ALL & ~E_STRICT );
-
+define('AUTOMATIC_UPDATER_DISABLED', true);
+define('DISABLE_WP_CRON', true);
+define('DISALLOW_FILE_EDIT', true);
 
 /**
  * Bootstrap WordPress
