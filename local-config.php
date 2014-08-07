@@ -6,12 +6,12 @@ define('DB_USER', 'wp' );
 define('DB_PASSWORD',  'wp' );
 define('DB_HOST',  'localhost' );
 
-define('WP_HOME', 'http://isk.dev');
-define('WP_SITEURL', 'http://isk.dev/wp' );
+define( 'WP_HOME', 'http://isk.dev');
+define( 'WP_SITEURL', 'http://isk.dev/wp' );
 
-define('SAVEQUERIES', true);
-define('WP_DEBUG', true);
-define('SCRIPT_DEBUG', true);
+define( 'SAVEQUERIES', true);
+define( 'WP_DEBUG', true);
+define( 'SCRIPT_DEBUG', true);
 
 
 define('AUTH_KEY', 'arms' );
