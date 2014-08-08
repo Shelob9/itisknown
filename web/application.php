@@ -1,7 +1,13 @@
 <?php
 $root_dir = dirname(__DIR__);
-$webroot_dir = $root_dir . '/web';
 
+if ( defined( 'WP_ROOT_DIR' ) ) {
+	$webroot_dir = WP_ROOT_DIR;
+}
+else {
+	$webroot_dir = $root_dir . '/web';
+	define( 'WP_ROOT_DIR', $webroot_dir );
+}
 
 /**
  * Custom Content Directory

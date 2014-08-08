@@ -4,7 +4,7 @@ $local_config = dirname( dirname( __FILE__ ) ) . '/local-config.php';
 $prod_config = dirname( dirname( __FILE__ ) ) . '/production-config.php';
 
 //use local-config if we have one
-if ( file_exists( $local_config ) ) {
+if (  file_exists( $local_config ) ) {
 	define( 'WP_LOCAL_DEV', true );
 	include( $local_config  );
 }
@@ -27,6 +27,7 @@ else{
 
 //include common config stuff
 require_once( 'application.php' );
-
+//die( var_Dump( array( WP_CONTENT_DIR, WP_CONTENT_URL ) ));
 //require wp-settings so we may have WordPress
 require_once(ABSPATH . 'wp-settings.php');
+
