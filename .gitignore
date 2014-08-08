@@ -33,3 +33,4 @@ node_modules
 bin
 .vagrant
 web/app/podscache
+production-config.php
