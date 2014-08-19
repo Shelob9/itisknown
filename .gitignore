@@ -34,3 +34,4 @@ bin
 .vagrant
 web/app/podscache
 production-config.php
+do-config.php

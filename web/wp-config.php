@@ -2,6 +2,9 @@
 //define locations for configs
 $local_config = dirname( dirname( __FILE__ ) ) . '/local-config.php';
 $prod_config = dirname( dirname( __FILE__ ) ) . '/production-config.php';
+if ( $_SERVER['HTTP_HOST'] == '162.243.223.241/' ) {
+	$prod_config = dirname( dirname( __FILE__ ) ) . '/do-config.php';
+}
 
 //use local-config if we have one
 if (  file_exists( $local_config ) ) {
