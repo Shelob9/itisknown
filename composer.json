@@ -40,8 +40,8 @@
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-		"php"													: ">=5.3.2",
-        "johnpbloch/wordpress"                                  : ">=3.9",
+		"php"													: ">=5.5",
+        "johnpbloch/wordpress"                                  : "3.9.2",
 		"fancyguy/webroot-installer"							: "1.1.0",
 		"composer/installers"									: "v1.0.12",
 		"vlucas/phpdotenv"										: "~1.0.6",
@@ -55,7 +55,8 @@
 		"wpackagist/akismet"									: "*",
 		"wpackagist/jetpack"									: "*",
         "wpackagist/genericond"                                 : "*",
-        "shelob9/jp-random-affiliate"                           : "*"
+        "shelob9/jp-random-affiliate"                           : "*",
+        "wpackagist/wordfence"                                  : "x"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
